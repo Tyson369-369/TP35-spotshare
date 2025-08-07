@@ -1,31 +1,17 @@
 <template>
-<<<<<<< HEAD
   <div id="app">
-    <GoogleMap />
+    <nav>
+      <router-link to="/">Map</router-link> |
+      <router-link to="/chart">Parking statistics</router-link>
+    </nav>
+
+    <router-view />
   </div>
-=======
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <HelloWorld />
-  </main>
->>>>>>> ff278876acecb12fd5451db24298f9212a7bbde2
 </template>
 
 <script>
-import GoogleMap from './components/GoogleMap.vue'
-
 export default {
   name: 'App',
-  components: {
-    GoogleMap,
-  },
 }
 </script>
 
