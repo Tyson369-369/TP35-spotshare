@@ -1,0 +1,27 @@
+[
+  {
+    "year":2017,
+    "vehiclesAdded":209495,
+    "growthRatePercent":4.2
+  },
+  {
+    "year":2018,
+    "vehiclesAdded":214408,
+    "growthRatePercent":4.2
+  },
+  {
+    "year":2019,
+    "vehiclesAdded":236429,
+    "growthRatePercent":4.5
+  },
+  {
+    "year":2020,
+    "vehiclesAdded":215728,
+    "growthRatePercent":4.0
+  },
+  {
+    "year":2021,
+    "vehiclesAdded":188855,
+    "growthRatePercent":3.5
+  }
+]
