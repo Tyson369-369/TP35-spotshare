@@ -15,14 +15,18 @@ import {
 } from 'chart.js'
 import { Line } from 'vue-chartjs'
 
+// Import real data
+import carGrowthData from '@/assets/vic_car_growth.json'
+
 ChartJS.register(LineElement, PointElement, CategoryScale, LinearScale, Title, Tooltip, Legend)
 
+// Extract the year and the number of new vehicles from the JSON
 const chartData = {
-  labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+  labels: carGrowthData.map(item => item.year), // Year on the X-axis
   datasets: [
     {
-      label: 'Cars per 1,000 Residents',
-      data: [705, 712, 715, 728, 735, 748, 770],
+      label: 'Vehicles Added',
+      data: carGrowthData.map(item => item.vehiclesAdded), // Number of vehicles on the Y-axis
       backgroundColor: '#007aff',
       borderColor: '#007aff',
       tension: 0.3,
@@ -36,8 +40,9 @@ const chartOptions = {
   responsive: true,
   plugins: {
     legend: {
-      display: false
+      display: true
     }
   }
 }
 </script>
+

@@ -14,7 +14,7 @@
       </div>
 
       <div class="chart-card">
-        <h3>📈 Population Growth in CBD</h3>
+        <h3>📈 Population Change in CBD</h3>
         <BarChart />
         <div class="chart-note green">
           <strong>+28% CBD population since 2018</strong><br />

@@ -14,25 +14,35 @@ import {
 } from 'chart.js'
 import { Bar } from 'vue-chartjs'
 
+// Import Melbourne population trend data
+import melbourneTrend from '@/assets/melbourne_trend.json'
+
+// Register required Chart.js components
 ChartJS.register(BarElement, CategoryScale, LinearScale, Title, Tooltip, Legend)
 
+// Filter data for year >= 2017
+const filteredData = melbourneTrend.filter(item => item.year >= 2017)
+
+// Prepare chart data using filtered records
 const chartData = {
-  labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+  labels: filteredData.map(item => item.year), // X-axis: years
   datasets: [
     {
       label: 'CBD Population',
-      data: [85000, 92000, 98000, 120000, 150000, 180000, 220000],
+      data: filteredData.map(item => item.melbourneCBD), // Y-axis: CBD population
       backgroundColor: '#2ecc71'
     }
   ]
 }
 
+// Chart display options
 const chartOptions = {
   responsive: true,
   plugins: {
     legend: {
-      display: false
+      display: true
     }
   }
 }
 </script>
+
