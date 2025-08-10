@@ -1,4 +1,4 @@
-<!-- src/components/ParkingMap.vue -->
+<!-- src/components/ParkingMap.vue-->
 <template>
   <div class="parking-map">
     <h2 class="map-heading">
