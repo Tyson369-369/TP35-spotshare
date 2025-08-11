@@ -8,7 +8,7 @@
       <RouterLink to="/dashboard">Dashboard</RouterLink>
       <RouterLink to="/find-parking">Find Parking</RouterLink>
       <RouterLink to="/trends">Mobility Trends</RouterLink>
-      <RouterLink to="/history">My History</RouterLink>
+      <RouterLink to="/history">Find my Spot</RouterLink>
       <RouterLink to="/eco-score">Eco Score</RouterLink>
     </nav>
     <div class="profile-circle"></div>
